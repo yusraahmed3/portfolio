@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.80333a38.css",
-    "main.js": "/static/js/main.b9a9d55a.js",
-    "static/js/787.a30a0969.chunk.js": "/static/js/787.a30a0969.chunk.js",
-    "static/media/frame1a.png": "/static/media/frame1a.1421b6d3a4765630f32f.png",
-    "static/media/doggif.gif": "/static/media/doggif.52f0fd77fa2643bff1c5.gif",
-    "static/media/proj1a.png": "/static/media/proj1a.9093a5d324f8e4ea33d7.png",
-    "static/media/frame2a.png": "/static/media/frame2a.1c1ca2a2c5ec51dc0bb3.png",
-    "static/media/MontserratAlternates-Light.ttf": "/static/media/MontserratAlternates-Light.f108b24eefec66e65492.ttf",
-    "static/media/pic01.jpg": "/static/media/pic01.3a50fa5fa4f95fb87f74.jpg",
-    "static/media/Frame7.png": "/static/media/Frame7.4802a7abd6874338a69d.png",
-    "static/media/RadioCanada-Regular.ttf": "/static/media/RadioCanada-Regular.d27e1bceccc9fe2a33de.ttf",
-    "static/media/proj1d.png": "/static/media/proj1d.db1e9b0e8da5aff69cd6.png",
-    "static/media/resume.pdf": "/static/media/resume.20b19c76c3a11be1eacc.pdf",
-    "static/media/proj1e.png": "/static/media/proj1e.b2f32f8d4c2e6c70b9d0.png",
-    "static/media/proj1b.png": "/static/media/proj1b.bd57352d71d3c42cc368.png",
-    "static/media/proj1c.png": "/static/media/proj1c.7a659b1782d69b5a2bf9.png",
-    "index.html": "/index.html",
-    "main.80333a38.css.map": "/static/css/main.80333a38.css.map",
-    "main.b9a9d55a.js.map": "/static/js/main.b9a9d55a.js.map",
-    "787.a30a0969.chunk.js.map": "/static/js/787.a30a0969.chunk.js.map"
+    "main.css": "//yusraahmed3.github.io/portfolio/static/css/main.1a5d168e.css",
+    "main.js": "//yusraahmed3.github.io/portfolio/static/js/main.2ecd579d.js",
+    "static/js/787.a30a0969.chunk.js": "//yusraahmed3.github.io/portfolio/static/js/787.a30a0969.chunk.js",
+    "static/media/frame1a.png": "//yusraahmed3.github.io/portfolio/static/media/frame1a.1421b6d3a4765630f32f.png",
+    "static/media/doggif.gif": "//yusraahmed3.github.io/portfolio/static/media/doggif.52f0fd77fa2643bff1c5.gif",
+    "static/media/proj1a.png": "//yusraahmed3.github.io/portfolio/static/media/proj1a.9093a5d324f8e4ea33d7.png",
+    "static/media/frame2a.png": "//yusraahmed3.github.io/portfolio/static/media/frame2a.1c1ca2a2c5ec51dc0bb3.png",
+    "static/media/MontserratAlternates-Light.ttf": "//yusraahmed3.github.io/portfolio/static/media/MontserratAlternates-Light.f108b24eefec66e65492.ttf",
+    "static/media/pic01.jpg": "//yusraahmed3.github.io/portfolio/static/media/pic01.3a50fa5fa4f95fb87f74.jpg",
+    "static/media/Frame7.png": "//yusraahmed3.github.io/portfolio/static/media/Frame7.4802a7abd6874338a69d.png",
+    "static/media/RadioCanada-Regular.ttf": "//yusraahmed3.github.io/portfolio/static/media/RadioCanada-Regular.d27e1bceccc9fe2a33de.ttf",
+    "static/media/proj1d.png": "//yusraahmed3.github.io/portfolio/static/media/proj1d.db1e9b0e8da5aff69cd6.png",
+    "static/media/resume.pdf": "//yusraahmed3.github.io/portfolio/static/media/resume.20b19c76c3a11be1eacc.pdf",
+    "static/media/proj1e.png": "//yusraahmed3.github.io/portfolio/static/media/proj1e.b2f32f8d4c2e6c70b9d0.png",
+    "static/media/proj1b.png": "//yusraahmed3.github.io/portfolio/static/media/proj1b.bd57352d71d3c42cc368.png",
+    "static/media/proj1c.png": "//yusraahmed3.github.io/portfolio/static/media/proj1c.7a659b1782d69b5a2bf9.png",
+    "index.html": "//yusraahmed3.github.io/portfolio/index.html",
+    "main.1a5d168e.css.map": "//yusraahmed3.github.io/portfolio/static/css/main.1a5d168e.css.map",
+    "main.2ecd579d.js.map": "//yusraahmed3.github.io/portfolio/static/js/main.2ecd579d.js.map",
+    "787.a30a0969.chunk.js.map": "//yusraahmed3.github.io/portfolio/static/js/787.a30a0969.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80333a38.css",
-    "static/js/main.b9a9d55a.js"
+    "static/css/main.1a5d168e.css",
+    "static/js/main.2ecd579d.js"
   ]
 }
