@@ -1,6 +1,5 @@
 import "./App.css";
 import Homepage from "./components/Homepage";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./components/Contact";
 import WorkHistory from "./components/WorkHistory";
 import { About } from "./components/About";

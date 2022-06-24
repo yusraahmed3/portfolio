@@ -15,9 +15,5 @@
     src: url("assets/fonts/MontserratAlternates-Light.ttf");
   }
 
-  @layer base {
-    Link {
-      @apply text-yellow-300;
-    }
-  }
+
 
