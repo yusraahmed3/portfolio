@@ -22,12 +22,12 @@ export const ModalPage = ({ showModal, setShowModal, project }) => {
 
   const h1Animation = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1.5 } },
+    visible: { opacity: 1, transition: { duration: 0.5 } },
   };
 
   const textAnimation = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1.5 } },
+    visible: { opacity: 1, transition: { duration: 0.5 } },
   };
 
   return (
@@ -46,29 +46,33 @@ export const ModalPage = ({ showModal, setShowModal, project }) => {
             <motion.div
               variants={containerAnimation}
               exit={{ y: -1000 }}
-              className="w-4/5 md:w-1/2 h-4/5  rounded-lg relative overflow-hidden"
+              className="w-4/5 md:w-1/2 h-full  rounded-lg relative overflow-hidden"
             >
                 <MdClose
                   onClick={() => setShowModal(false)}
-                  className="absolute top-3 right-3 text-xl text-black z-10 cursor-pointer"
+                  className="absolute top-3 right-3 text-xl text-gray-200 z-10 cursor-pointer"
                 />
 
               <div className="w-full h-full flex flex-col ">
-                <div className="w-full h-1/3 flex flex-col  items-start p-5 justify-center bg-white border-b-2 border-b-mainBg">
+                <div className="w-full h-[30%] flex flex-col gap-3 items-start p-6 justify-center bg-black bg-opacity-90 border-b-2 border-b-terBg">
                   <motion.h1
                     variants={h1Animation}
-                    className="text-lg md:text-2xl font-bold font-montserrat"
+                    className="text-lg md:text-2xl font-bold font-montserrat text-terBg"
                   >
                     {project.title}
                   </motion.h1>
                   <motion.p
                     variants={textAnimation}
-                    className=" text-black text-xs md:text-sm font-medium"
+                    className=" text-gray-200 text-xs md:text-sm font-medium"
                   >
                     {project.description}
                   </motion.p>
+                  <motion.a variants={textAnimation} href={project.link} target="_blank" rel="noreferrer" className="border-2 border-terBg text-center text-gray-200 w-32 rounded-md p-1 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100">
+                  Demo
+                </motion.a>
                 </div>
-                <div className="w-full h-full">
+
+                <div className="w-full h-full bg-white md:bg-transparent">
                   <Carousal images={project.images} />
                 </div>
               </div>

@@ -36,7 +36,7 @@ const Carousal = ({ images }) => {
               <img
                 src={imgs}
                 alt="port"
-                className="absolute inset-0 block w-full h-full object-cover"
+                className="absolute inset-0 block w-full h-full object-scale-down md:object-cover"
               />
             ) : null}
           </motion.div>

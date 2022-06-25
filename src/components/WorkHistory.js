@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ModalPage } from "./ModalPage";
 import ProjectData from "./ProjectData";
@@ -9,30 +9,39 @@ const h1Animation = {
 }
 
 const imageBoxAnimation = {
-  "hidden": {opacity: 0},
-  "visible": {opacity:1, scale: [0.3, 1], transition: {duration: 0.5 } }
+  "hidden": {opacity: 0, scale: 0.5},
+  "visible": {opacity:1, scale: 1, transition: {duration: 0.5 } }
 };
 
 function WorkHistory() {
   let [showModal, setShowModal] = useState(false);
   const [projectInfo, setProjectInfo] = useState({});
 
+  useEffect(()=>{
+    if (showModal) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [showModal])
+
   const openModal = (project) => {
     setShowModal(true);
     setProjectInfo(project);
   };
 
+
   return (
     <motion.div 
     initial="hidden"
     whileInView="visible"
-    viewport = {{once: true, amount: 0.5}}
-    transition = {{staggerChildren: 0.2}}
-    className=" h-screen overflow-hidden font-montserrat">
+    viewport = {{once: true, amount: 0.3}}
+    transition = {{staggerChildren: 0.15}}
+    className=" h-full font-montserrat">
       <div className="text-center">
         <motion.h1
         variants={h1Animation}
-          className=" text-terBg text-lg sm:text-2xl md:text-4xl font-bold my-10 md:my-20"
+          className=" text-terBg text-2xl md:text-4xl font-bold my-10 md:my-20"
         >
           Personal Projects
         </motion.h1>

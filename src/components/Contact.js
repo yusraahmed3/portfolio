@@ -1,8 +1,7 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineDownload } from "react-icons/ai";
 import resumeFile from "../assets/file/resume.pdf";
 import emailjs from "emailjs-com";
 import { Form } from "./Form";
@@ -36,19 +35,27 @@ const formAnimation = {
   },
 };
 
-const Contact = () => {
+const Contact = ({ forwardedRef }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const submitForm = (values) => {
     setIsSubmitted(true);
     emailjs
-      .send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID , values,process.env.REACT_APP_USER_ID )
+      .send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        values,
+        process.env.REACT_APP_USER_ID
+      )
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-   };
+  };
 
   return (
-    <div className="min-h-screen flex items-center justify-center overflow-hidden">
+    <div
+      ref={forwardedRef}
+      className="min-h-screen flex items-center justify-center overflow-hidden"
+    >
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -60,13 +67,13 @@ const Contact = () => {
           <div>
             <motion.h1
               variants={h1Animation}
-              className="text-terBg font-bold text-xl md:text-4xl font-montserrat"
+              className="text-terBg font-bold text-2xl md:text-4xl font-montserrat"
             >
               Get in touch
             </motion.h1>
             <motion.p
               variants={textAnimation}
-              className="text-gray-200 text-sm mt-2"
+              className="text-gray-200 text-sm md:text-lg mt-2"
             >
               Got a question? Interested for what we can make together? Let's
               talk!
@@ -80,10 +87,10 @@ const Contact = () => {
               (window.location.href = "mailto:yusraa190@gmail.com")
             }
           >
-            <div className=" border border-white w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 relative ">
-              <BsArrowRight className="text-terBg text-xl md:text-2xl lg:text-3xl absolute top-1/2 -translate-y-1/2 -left-2 group-hover:translate-x-3 lg:group-hover:translate-x-5 transition duration-500 " />
+            <div className=" border border-white w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 relative ">
+              <BsArrowRight className="text-terBg text-2xl lg:text-3xl absolute top-1/2 -translate-y-1/2 -left-2 group-hover:translate-x-3 lg:group-hover:translate-x-5 transition duration-500 " />
             </div>
-            <span className="  text-sm md:text-lg text-center  text-gray-200 scale-95 group-hover:scale-105 transition duration-500 absolute">
+            <span className="  text-lg  text-center  text-gray-200 scale-95 group-hover:scale-105 transition duration-500 absolute">
               yusraa190@gmail.com
             </span>
           </motion.div>
@@ -142,7 +149,6 @@ const Contact = () => {
               whileTap={{ scale: 0.95 }}
               className="text-gray-400 text-sm hover:text-gray-300 no-underline font-radioCanada mr-10"
             >
-
               Resume
             </motion.a>
           </div>
