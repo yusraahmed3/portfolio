@@ -28,7 +28,7 @@ function WorkHistory() {
     whileInView="visible"
     viewport = {{once: true, amount: 0.5}}
     transition = {{staggerChildren: 0.2}}
-    className=" min-h-screen overflow-hidden font-montserrat">
+    className=" h-screen overflow-hidden font-montserrat">
       <div className="text-center">
         <motion.h1
         variants={h1Animation}

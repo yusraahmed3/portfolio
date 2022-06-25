@@ -8,7 +8,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="App flex flex-col gap-y-16">
+    <div className="App flex flex-col gap-y-20 md:gap-y-14">
       <Helmet>
         <meta charSet="utf-8" />
         <title>Yusra </title>

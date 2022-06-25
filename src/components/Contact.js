@@ -66,7 +66,7 @@ const Contact = () => {
             </motion.h1>
             <motion.p
               variants={textAnimation}
-              className="text-gray-200 text-sm"
+              className="text-gray-200 text-sm mt-2"
             >
               Got a question? Interested for what we can make together? Let's
               talk!

@@ -3,11 +3,10 @@ import { motion } from "framer-motion";
 import { BsArrowDownShort } from "react-icons/bs";
 
 const headlineAnimation = {
-  hidden: { y: -200 },
+  hidden: { opacity: 0 },
   visible: {
-    y: 0,
-    rotate: [0, 10, 0],
-    transition: { duration: 0.5, type: "spring", bounce: 0.5 },
+    opacity: 1,
+    transition: { duration: 0.5 },
   },
 };
 
@@ -27,21 +26,19 @@ const arrowAnimation = {
 
 function Homepage() {
   return (
-    <motion.div 
-    initial="hidden"
-    animate="visible"
-    transition={{staggerChildren: 0.5}}
-    className="relative flex h-screen">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      transition={{ staggerChildren: 0.5 }}
+      className="relative flex h-screen"
+    >
       <div className="m-auto">
-        <motion.h1
-          variants={headlineAnimation}
-          className="font-radioCanada text-terBg text-3xl text-center sm:text-7xl md:text-8xl lg:text-9xl font-extralight italic"
-        >
-          Hi, I'm Yusra
-        </motion.h1>
+        <h1 className="font-radioCanada text-terBg text-3xl text-center sm:text-7xl md:text-8xl lg:text-9xl font-extralight italic">
+          <motion.span variants={headlineAnimation}>Hi,</motion.span> <motion.span variants={headlineAnimation}>I'm Yusra</motion.span>
+        </h1>
         <motion.p
           variants={subAnimation}
-          className="font-montserrat text-gray-200 text-xs sm:text-base md:text-xl text-center mt-10  leading-relaxed"
+          className="font-montserrat text-gray-200 text-xs sm:text-base md:text-xl text-center mt-10  leading-relaxed font-bold"
         >
           I make fully-functional websites and mobile applications.
         </motion.p>

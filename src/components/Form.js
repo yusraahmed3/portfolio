@@ -47,7 +47,7 @@ export const Form = ({ submitForm }) => {
 
         <label
           htmlFor="email"
-          className="peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-sm transition-all
+          className="peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-xs  sm:text-sm transition-all
     peer-focus:text-sm peer-focus:text-terBg peer-focus:-top-3"
         >
           Email

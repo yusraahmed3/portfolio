@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import ProPic from "../assets/images/pic01.jpg";
+import CatGif from "../assets/images/catgif.gif"
 import { motion } from "framer-motion";
 
 const LinkUnderLine = styled(motion.div)`
@@ -49,6 +50,7 @@ const buttonAnimation = {
 };
 
 export const About = () => {
+  const [onHover, setOnHover] = useState(false)
   return (
     <div className="h-screen w-full mt-28">
       <motion.div
@@ -78,7 +80,7 @@ export const About = () => {
           </motion.h2>
           <motion.p
             variants={textAnimation}
-            className="text-gray-200 text-xs leading-loose sm:text-sm sm:leading-loose lg:text-lg lg:leading-loose font-montserrat md:mt-6"
+            className="text-gray-200 text-xs leading-loose sm:text-sm sm:leading-loose lg:text-lg lg:leading-loose font-montserrat mt-3 md:mt-6"
           >
             Hello there!. I'm Yusra and i am a developer based in Jeddah, KSA. I
             like making clean, simple and fancy websites, all the while being
@@ -86,19 +88,19 @@ export const About = () => {
             but also get a kick out of backend-development. I've built mobile
             and web apps using ReactJS, Flutter and NodeJS.
             <br />
-            When I'm not coding, I like to sketch and spend time with family and
-            my cat, Gigi.
+            When I'm not coding, I like to sketch and spend time with family and my cat, 
+             <span className="underline decoration-wavy underline-offset-8 inline-flex ml-2  transition duration-200" onMouseOver={()=>setOnHover(true)} onMouseOut={()=>setOnHover(false)} > Gigi. { onHover ? <span className="relative w-20 md:w-28"><img src={CatGif} alt="cat" className="w-full h-14 md:h-20 rounded-md object-cover absolute -top-10 -right-5 md:-top-14 md:-right-8"/></span> : ""}</span>
             <br />
             <br />
           </motion.p>
           <LinkUnderLine
-          whileHover={{translateX: 40}}
+          whileHover={{translateX: 30}}
             variants={buttonAnimation}
             onClick={(e) => {
               e.preventDefault();
               window.location.replace("/#contact");
             }}
-            className="text-gray-200 w-20 text-xs xs:-mt-4 sm:mt-0 sm:text-sm sm:w-24 md:text-lg md:w-28 text-center font-montserrat font-bold"
+            className="text-gray-200 w-20 text-xs mt-2 md:mt-4 sm:text-sm sm:w-24 md:text-lg md:w-28 text-center font-montserrat font-bold"
           >
             Get in touch
           </LinkUnderLine>
