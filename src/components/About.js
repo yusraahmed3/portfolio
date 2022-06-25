@@ -82,7 +82,7 @@ export const About = ({ contactRef }) => {
             variants={textAnimation}
             className="text-gray-200 text-base leading-loose md:text-lg sm:leading-loose lg:text-lg lg:leading-loose font-montserrat mt-3 md:mt-6"
           >
-            Hello there!. I'm Yusra and i am a developer based in Jeddah, KSA. I
+            Hello there! I'm Yusra and i am a developer based in Jeddah, KSA. I
             like making clean, simple and fancy websites, all the while being
             meticulous and punctual. I enjoy working in front-end development
             but also get a kick out of backend-development. I've built mobile
