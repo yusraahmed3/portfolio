@@ -71,7 +71,7 @@ export const About = ({ contactRef }) => {
           />
         </motion.div>
 
-        <div className=" flex flex-col  w-3/4 -order-1 md:order-none">
+        <div className=" flex flex-col  w-4/5 md:3/4 -order-1 md:order-none">
           <motion.h2
             variants={h2Animation}
             className="text-terBg  text-2xl  md:text-3xl font-montserrat font-bold "
@@ -102,7 +102,7 @@ export const About = ({ contactRef }) => {
                   <img
                     src={CatGif}
                     alt="cat"
-                    className="w-full h-14 md:h-24 rounded-md object-cover absolute -top-10 -right-5 md:-top-14 md:-right-8"
+                    className="w-full h-14 md:h-24 rounded-md object-cover absolute left-2 -top-10 md:-top-14 md:-right-8"
                   />
                 </span>
               ) : (
