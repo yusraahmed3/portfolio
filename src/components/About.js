@@ -71,7 +71,7 @@ export const About = () => {
           />
         </motion.div>
 
-        <div className=" flex flex-col  w-3/4 -order-1">
+        <div className=" flex flex-col  w-3/4 -order-1 md:order-none">
           <motion.h2
             variants={h2Animation}
             className="text-terBg  text-xl sm:text-2xl md:text-3xl font-montserrat font-bold "
