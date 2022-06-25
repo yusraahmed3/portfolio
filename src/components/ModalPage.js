@@ -57,7 +57,7 @@ export const ModalPage = ({ showModal, setShowModal, project }) => {
                 <div className="w-full h-[30%] flex flex-col gap-3 items-start p-6 justify-center bg-black bg-opacity-90 border-b-2 border-b-terBg">
                   <motion.h1
                     variants={h1Animation}
-                    className="text-lg md:text-2xl font-bold font-montserrat text-terBg"
+                    className="text-xl md:text-2xl font-bold font-montserrat text-terBg"
                   >
                     {project.title}
                   </motion.h1>
@@ -67,7 +67,7 @@ export const ModalPage = ({ showModal, setShowModal, project }) => {
                   >
                     {project.description}
                   </motion.p>
-                  <motion.a variants={textAnimation} href={project.link} target="_blank" rel="noreferrer" className="border-2 border-terBg text-center text-gray-200 w-32 rounded-md p-1 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100">
+                  <motion.a variants={textAnimation} href={project.link} target="_blank" rel="noreferrer" className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-1 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100">
                   Demo
                 </motion.a>
                 </div>

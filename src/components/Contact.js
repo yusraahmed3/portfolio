@@ -73,7 +73,7 @@ const Contact = ({ forwardedRef }) => {
             </motion.h1>
             <motion.p
               variants={textAnimation}
-              className="text-gray-200 text-sm md:text-lg mt-2"
+              className="text-gray-200 text-base md:text-lg mt-2"
             >
               Got a question? Interested for what we can make together? Let's
               talk!
@@ -90,7 +90,7 @@ const Contact = ({ forwardedRef }) => {
             <div className=" border border-white w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 relative ">
               <BsArrowRight className="text-terBg text-2xl lg:text-3xl absolute top-1/2 -translate-y-1/2 -left-2 group-hover:translate-x-3 lg:group-hover:translate-x-5 transition duration-500 " />
             </div>
-            <span className="  text-lg  text-center  text-gray-200 scale-95 group-hover:scale-105 transition duration-500 absolute">
+            <span className="  text-base  text-center  text-gray-200 scale-95 group-hover:scale-105 transition duration-500 absolute">
               yusraa190@gmail.com
             </span>
           </motion.div>

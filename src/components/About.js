@@ -80,7 +80,7 @@ export const About = ({ contactRef }) => {
           </motion.h2>
           <motion.p
             variants={textAnimation}
-            className="text-gray-200 text-sm leading-loose md:text-lg sm:leading-loose lg:text-lg lg:leading-loose font-montserrat mt-3 md:mt-6"
+            className="text-gray-200 text-base leading-loose md:text-lg sm:leading-loose lg:text-lg lg:leading-loose font-montserrat mt-3 md:mt-6"
           >
             Hello there!. I'm Yusra and i am a developer based in Jeddah, KSA. I
             like making clean, simple and fancy websites, all the while being
@@ -118,7 +118,7 @@ export const About = ({ contactRef }) => {
             onClick={() =>
               contactRef.current.scrollIntoView({ behavior: "smooth" })
             }
-            className="text-gray-200 w-24 text-sm mt-2 md:mt-4  md:text-lg md:w-28 text-center font-montserrat font-bold"
+            className="text-gray-200 w-28 text-base mt-2 md:mt-4  md:text-lg md:w-28 text-center font-montserrat font-bold"
           >
             Get in touch
           </LinkUnderLine>
