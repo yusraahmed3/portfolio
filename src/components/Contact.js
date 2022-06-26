@@ -75,7 +75,7 @@ const Contact = ({ forwardedRef }) => {
               variants={textAnimation}
               className="text-gray-200 text-base md:text-lg mt-2"
             >
-              Got a question? Interested for what we can make together? Let's
+              Got a question? Interested in what we can make together? Let's
               talk!
             </motion.p>
           </div>

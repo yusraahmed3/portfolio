@@ -120,7 +120,7 @@ export const Form = ({ submitForm }) => {
         whileHover={{ translateX: -30 }}
         variants={buttonAnimation}
         type="submit"
-        className="text-gray-200 hover:bg-black hover:bg-opacity-30 hover:text-terBg transition-colors duration-300 text-sm  w-28 inline-block self-end p-1 md:p-2 border-2 border-terBg  rounded-lg"
+        className="text-gray-200 hover:bg-black hover:bg-opacity-30 hover:text-terBg transition-colors duration-300 text-sm w-32 md:w-28 inline-block self-end p-1 border-2 border-terBg  rounded-lg"
       >
         Send Message
       </motion.button>

@@ -52,7 +52,7 @@ const buttonAnimation = {
 export const About = ({ contactRef }) => {
   const [onHover, setOnHover] = useState(false);
   return (
-    <div className="h-full w-full mt-28">
+    <div className="h-full w-full mt-0 md:mt-24">
       <motion.div
         initial="hidden"
         whileInView="visible"

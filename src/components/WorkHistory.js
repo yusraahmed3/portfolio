@@ -20,6 +20,7 @@ function WorkHistory() {
   useEffect(()=>{
     if (showModal) {
       document.body.style.overflow = 'hidden';
+      document.body.ontouchmove = e => {e.target.preventDefault(); return false;}
     } else {
       document.body.style.overflow = 'unset';
     }
