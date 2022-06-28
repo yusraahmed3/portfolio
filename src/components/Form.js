@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Useform from "./Useform";
 import validate from "./ValidateInfo";
+import gtag from 'ga-gtag'
 
 const inputAnimation = {
   hidden: { y: -100, opacity: 0 },
@@ -21,6 +22,13 @@ const buttonAnimation = {
 };
 
 export const Form = ({ submitForm }) => {
+
+  function trackContactButtonClick(){
+    gtag('event', 'click_send_message_button', {
+      button_title: 'Send message'
+    })
+  }
+
   const form = useRef();
   const { handleChange, values, handleSubmit, errors } = Useform(
     submitForm,
@@ -120,6 +128,7 @@ export const Form = ({ submitForm }) => {
         whileHover={{ translateX: -30 }}
         variants={buttonAnimation}
         type="submit"
+        onClick={trackContactButtonClick}
         className="text-gray-200 hover:bg-black hover:bg-opacity-30 hover:text-terBg transition-colors duration-300 text-sm w-32 md:w-28 inline-block self-end p-1 border-2 border-terBg  rounded-lg"
       >
         Send Message

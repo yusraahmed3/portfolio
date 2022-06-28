@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ModalPage } from "./ModalPage";
 import ProjectData from "./ProjectData";
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const h1Animation = {
   "hidden": {y: "-100%", opacity: 0},
@@ -14,17 +15,23 @@ const imageBoxAnimation = {
 };
 
 function WorkHistory() {
+  var targetRef = useRef()
+  var targetElement = null
   let [showModal, setShowModal] = useState(false);
   const [projectInfo, setProjectInfo] = useState({});
 
+
   useEffect(()=>{
-    if (showModal) {
-      document.body.style.overflow = 'hidden';
-      document.body.ontouchmove = e => {e.target.preventDefault(); return false;}
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-  }, [showModal])
+    targetElement = targetRef.current
+    // if (showModal) {
+    //   enableBodyScroll(targetElement)
+    //   // document.body.style.overflow = 'hidden';
+    //   // document.body.ontouchmove = e => {e.target.preventDefault(); return false;}
+    // } else {
+    //   // document.body.style.overflow = 'unset';
+    //   disableBodyScroll(targetElement)
+    // }
+  })
 
   const openModal = (project) => {
     setShowModal(true);

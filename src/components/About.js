@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ProPic from "../assets/images/pic01.jpg";
 import CatGif from "../assets/images/catgif.gif";
 import { motion } from "framer-motion";
+import gtag from 'ga-gtag'
 
 const LinkUnderLine = styled(motion.div)`
   border-bottom-width: 0;
@@ -51,6 +52,13 @@ const buttonAnimation = {
 
 export const About = ({ contactRef }) => {
   const [onHover, setOnHover] = useState(false);
+
+  function trackButtonClick(){
+    gtag('event', 'click_get_in_touch_button', {
+      button_title: 'In Touch'
+    })
+  }
+
   return (
     <div className="h-full w-full ">
       <motion.div
@@ -116,7 +124,7 @@ export const About = ({ contactRef }) => {
             whileHover={{ translateX: 30 }}
             variants={buttonAnimation}
             onClick={() =>
-              contactRef.current.scrollIntoView({ behavior: "smooth" })
+              {contactRef.current.scrollIntoView({ behavior: "smooth" }); trackButtonClick()}
             }
             className="text-gray-200 w-28 text-base mt-2 md:mt-4  md:text-lg md:w-28 text-center font-montserrat font-bold"
           >

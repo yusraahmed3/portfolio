@@ -3,7 +3,7 @@ import { MdClose } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 import Carousal from "./Carousal";
 
-export const ModalPage = ({ showModal, setShowModal, project }) => {
+export const ModalPage = ({ showModal, setShowModal, project, ref }) => {
   const modalRef = useRef();
 
   const closeModal = (e) => {
@@ -48,10 +48,10 @@ export const ModalPage = ({ showModal, setShowModal, project }) => {
               exit={{ y: -1000 }}
               className="w-4/5 md:w-1/2 h-full  rounded-lg relative overflow-hidden"
             >
-                <MdClose
-                  onClick={() => setShowModal(false)}
-                  className="absolute top-3 right-3 text-xl text-gray-200 z-10 cursor-pointer"
-                />
+              <MdClose
+                onClick={() => setShowModal(false)}
+                className="absolute top-3 right-3 text-xl text-gray-200 z-10 cursor-pointer"
+              />
 
               <div className="w-full h-full flex flex-col ">
                 <div className="w-full h-[30%] flex flex-col gap-3 items-start p-6 justify-center bg-black bg-opacity-90 border-b-2 border-b-terBg">
@@ -67,9 +67,15 @@ export const ModalPage = ({ showModal, setShowModal, project }) => {
                   >
                     {project.description}
                   </motion.p>
-                  <motion.a variants={textAnimation} href={project.link} target="_blank" rel="noreferrer" className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-1 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100">
-                  Demo
-                </motion.a>
+                  <motion.a
+                    variants={textAnimation}
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-1 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100"
+                  >
+                    Demo
+                  </motion.a>
                 </div>
 
                 <div className="w-full h-full bg-white md:bg-transparent">

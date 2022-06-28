@@ -7,6 +7,7 @@ import emailjs from "emailjs-com";
 import { Form } from "./Form";
 import { EmailSent } from "./EmailSent";
 
+
 const h1Animation = {
   hidden: { y: -100, opacity: 0 },
   visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
@@ -37,6 +38,9 @@ const formAnimation = {
 
 const Contact = ({ forwardedRef }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+
+
 
   const submitForm = (values) => {
     setIsSubmitted(true);
