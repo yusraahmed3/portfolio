@@ -45,7 +45,7 @@ function WorkHistory() {
     whileInView="visible"
     viewport = {{once: true}}
     transition = {{staggerChildren: 0.2}}
-    className=" h-full font-montserrat">
+    className={`${showModal ? 'touch-none' : 'touch-auto'} h-full font-montserrat`}>
       <div className="text-center">
         <motion.h1
         variants={h1Animation}
