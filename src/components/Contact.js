@@ -6,6 +6,8 @@ import resumeFile from "../assets/file/resume.pdf";
 import emailjs from "emailjs-com";
 import { Form } from "./Form";
 import { EmailSent } from "./EmailSent";
+import gtag from 'ga-gtag'
+
 
 
 const h1Animation = {
@@ -39,6 +41,11 @@ const formAnimation = {
 const Contact = ({ forwardedRef }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  function trackResumeButtonClick(){
+    gtag('event', 'download_resume', {
+      button_title: 'Resume download'
+    })
+  }
 
 
 
@@ -151,6 +158,7 @@ const Contact = ({ forwardedRef }) => {
               rel="noreferrer"
               whileHover={{ scale: 1.1, cursor: "pointer" }}
               whileTap={{ scale: 0.95 }}
+              onClick={trackResumeButtonClick}
               className="text-gray-400 text-sm hover:text-gray-300 no-underline font-radioCanada mr-10"
             >
               Resume
