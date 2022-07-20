@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import resumeFile from "../assets/file/resume.pdf";
+import resumeFile from "../assets/file/resume-2.pdf";
 import emailjs from "emailjs-com";
 import { Form } from "./Form";
 import { EmailSent } from "./EmailSent";
-import gtag from 'ga-gtag'
-
-
+import gtag from "ga-gtag";
 
 const h1Animation = {
   hidden: { y: -100, opacity: 0 },
@@ -41,13 +39,11 @@ const formAnimation = {
 const Contact = ({ forwardedRef }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  function trackResumeButtonClick(){
-    gtag('event', 'download_resume', {
-      button_title: 'Resume download'
-    })
+  function trackResumeButtonClick() {
+    gtag("event", "download_resume", {
+      button_title: "Resume download",
+    });
   }
-
-
 
   const submitForm = (values) => {
     setIsSubmitted(true);
