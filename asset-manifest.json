@@ -1,29 +1,31 @@
 {
   "files": {
     "main.css": "/static/css/main.d7ad7b36.css",
-    "main.js": "/static/js/main.05fe7c05.js",
+    "main.js": "/static/js/main.64c4a931.js",
     "static/js/787.a30a0969.chunk.js": "/static/js/787.a30a0969.chunk.js",
     "static/media/catgif.gif": "/static/media/catgif.5099ace6e90a7bda6679.gif",
     "static/media/frame1a.png": "/static/media/frame1a.1421b6d3a4765630f32f.png",
     "static/media/doggif.gif": "/static/media/doggif.52f0fd77fa2643bff1c5.gif",
     "static/media/frame2a.png": "/static/media/frame2a.1c1ca2a2c5ec51dc0bb3.png",
-    "static/media/frameaaa.png": "/static/media/frameaaa.2bd154e839baf96af897.png",
+    "static/media/about.png": "/static/media/about.29ebae3326babb92af1f.png",
     "static/media/MontserratAlternates-Light.ttf": "/static/media/MontserratAlternates-Light.f108b24eefec66e65492.ttf",
     "static/media/pic01.jpg": "/static/media/pic01.3a50fa5fa4f95fb87f74.jpg",
-    "static/media/Frame7.png": "/static/media/Frame7.4802a7abd6874338a69d.png",
-    "static/media/frameb.png": "/static/media/frameb.74eae87320d563fdb551.png",
+    "static/media/Frame7.png": "/static/media/Frame7.615d47d4e233762fc123.png",
+    "static/media/acc.png": "/static/media/acc.d2dc63fb8422c4db1c3b.png",
+    "static/media/rev.png": "/static/media/rev.9c5c958ce248415d0e62.png",
+    "static/media/chart.png": "/static/media/chart.94d838fdf63bd94c5799.png",
+    "static/media/reqpage.png": "/static/media/reqpage.913573d57d8c5d6fbd11.png",
+    "static/media/pend.png": "/static/media/pend.f09bb29aa4279294ee43.png",
     "static/media/RadioCanada-Regular.ttf": "/static/media/RadioCanada-Regular.d27e1bceccc9fe2a33de.ttf",
-    "static/media/framed.png": "/static/media/framed.4f127741ca3d5e0e1080.png",
-    "static/media/framec.png": "/static/media/framec.f8a8a7fcddc4caf94042.png",
-    "static/media/framee.png": "/static/media/framee.05ea004166fe675f1fa9.png",
+    "static/media/dash.png": "/static/media/dash.5cda797972e4766f1dbb.png",
     "static/media/resume-2.pdf": "/static/media/resume-2.263aa954e584162ff644.pdf",
     "index.html": "/index.html",
     "main.d7ad7b36.css.map": "/static/css/main.d7ad7b36.css.map",
-    "main.05fe7c05.js.map": "/static/js/main.05fe7c05.js.map",
+    "main.64c4a931.js.map": "/static/js/main.64c4a931.js.map",
     "787.a30a0969.chunk.js.map": "/static/js/787.a30a0969.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7ad7b36.css",
-    "static/js/main.05fe7c05.js"
+    "static/js/main.64c4a931.js"
   ]
 }
