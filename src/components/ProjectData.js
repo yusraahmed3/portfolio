@@ -1,13 +1,21 @@
-import Image1 from "../assets/images/Frame7.png";
-import Image1a from "../assets/images/about.png";
-import Image1b from "../assets/images/reqpage.png";
-import Image1c from "../assets/images/dash.png";
-import Image1d from "../assets/images/chart.png";
-import Image1e from "../assets/images/acc.png";
-import Image3 from "../assets/images/pend.png";
-import Image4 from "../assets/images/rev.png";
-import Image5 from "../assets/images/frame1a.png";
-import Image6 from "../assets/images/frame2a.png";
+import Image1 from "../assets/images/project1/Frame7.png";
+import Image1a from "../assets/images/project1/about.png";
+import Image1b from "../assets/images/project1/reqpage.png";
+import Image1c from "../assets/images/project1/dash.png";
+import Image1d from "../assets/images/project1/chart.png";
+import Image1e from "../assets/images/project1/acc.png";
+import Image3 from "../assets/images/project1/pend.png";
+import Image4 from "../assets/images/project1/rev.png";
+import Image5 from "../assets/images/project2/frame1a.png";
+import Image6 from "../assets/images/project2/frame2a.png";
+import Image7 from "../assets/images/project3/main.png";
+import Image8 from "../assets/images/project3/light.png";
+import Image9 from "../assets/images/project3/8.png";
+import Image10 from "../assets/images/project3/7.png";
+import Image11 from "../assets/images/project3/6.png";
+import Image12 from "../assets/images/project3/3.png";
+import Image13 from "../assets/images/project3/2.png";
+import Image14 from "../assets/images/project3/1.png";
 
 const ProjectData = {
   project1: {
@@ -31,6 +39,22 @@ const ProjectData = {
     title: "BookWorm",
     link: "https://github.com/yusraahmed3/MobileBookWorm",
     description: "Bookworm is a platform to read a variety of books online.",
+  },
+  project3: {
+    images: [
+      Image7,
+      Image9,
+      Image10,
+      Image11,
+      Image12,
+      Image13,
+      Image14,
+      Image8,
+    ],
+    title: "Entertainment App",
+    link: "https://github.com/yusraahmed3/entertainment-app",
+    demoLink: "https://entertainment-c9lkzsy8e-yusraahmed3.vercel.app/",
+    description: "A movie/show streaming demo app",
   },
 };
 

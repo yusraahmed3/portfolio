@@ -67,15 +67,28 @@ export const ModalPage = ({ showModal, setShowModal, project, ref }) => {
                   >
                     {project.description}
                   </motion.p>
-                  <motion.a
-                    variants={textAnimation}
-                    href={project.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-1 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100"
-                  >
-                    Demo
-                  </motion.a>
+                  <div className="self-end space-x-2">
+                    {project.demoLink && (
+                      <motion.a
+                        variants={textAnimation}
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-2 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100"
+                      >
+                        Visit demo website
+                      </motion.a>
+                    )}
+                    <motion.a
+                      variants={textAnimation}
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-2 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100"
+                    >
+                      View source code
+                    </motion.a>
+                  </div>
                 </div>
 
                 <div className="w-full h-full bg-white md:bg-transparent">
