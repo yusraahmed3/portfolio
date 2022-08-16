@@ -41,7 +41,7 @@ export const ModalPage = ({ showModal, setShowModal, project, ref }) => {
             ref={modalRef}
             onClick={closeModal}
             exit={{ opacity: 0 }}
-            className="h-full w-full  flex fixed inset-0 backdrop-blur-sm justify-center items-center  "
+            className="h-full w-full flex fixed inset-0 backdrop-blur-sm justify-center items-center  "
           >
             <motion.div
               variants={containerAnimation}
@@ -74,9 +74,9 @@ export const ModalPage = ({ showModal, setShowModal, project, ref }) => {
                         href={project.demoLink}
                         target="_blank"
                         rel="noreferrer"
-                        className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-2 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100"
+                        className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-1 lg:p-2 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100"
                       >
-                        Visit demo website
+                        Demo
                       </motion.a>
                     )}
                     <motion.a
@@ -84,9 +84,9 @@ export const ModalPage = ({ showModal, setShowModal, project, ref }) => {
                       href={project.link}
                       target="_blank"
                       rel="noreferrer"
-                      className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-2 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100"
+                      className="border-2 border-terBg text-center text-gray-200 w-24 text-sm md:text-base md:w-32 rounded-md p-1 lg:p-2 self-end font-bold hover:bg-terBg hover:bg-opacity-60 transition duration-100"
                     >
-                      View source code
+                      Source code
                     </motion.a>
                   </div>
                 </div>
