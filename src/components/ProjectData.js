@@ -31,6 +31,7 @@ const ProjectData = {
     ],
     title: "Smart Farming",
     link: "https://github.com/yusraahmed3/smartfarmingweb",
+    demoLink: "https://melodious-kashata-d5d712.netlify.app/",
     description:
       "Smart farming is a system that is built for monitoring the crop field with the help of sensors (humidity, temperature, soil moisture) and automating the irrigation system.",
   },

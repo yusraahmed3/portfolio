@@ -66,7 +66,7 @@ const Contact = ({ forwardedRef }) => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.25 }}
         transition={{ staggerChildren: 0.15 }}
         className="flex flex-col md:flex-row md:space-x-8 md:space-y-0  space-y-8 p-8 w-full max-w-4xl shadow-xl "
       >
@@ -74,7 +74,7 @@ const Contact = ({ forwardedRef }) => {
           <div>
             <motion.h1
               variants={h1Animation}
-              className="text-terBg font-bold text-2xl md:text-4xl font-montserrat"
+              className="text-terBg font-extrabold md:font-bold text-2xl md:text-4xl font-montserrat"
             >
               Get in touch
             </motion.h1>

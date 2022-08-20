@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ProPic from "../assets/images/pic01.jpg";
 import CatGif from "../assets/images/catgif.gif";
 import { motion } from "framer-motion";
-import gtag from 'ga-gtag'
+import gtag from "ga-gtag";
 
 const LinkUnderLine = styled(motion.div)`
   border-bottom-width: 0;
@@ -53,10 +53,10 @@ const buttonAnimation = {
 export const About = ({ contactRef }) => {
   const [onHover, setOnHover] = useState(false);
 
-  function trackButtonClick(){
-    gtag('event', 'click_get_in_touch_button', {
-      button_title: 'In Touch'
-    })
+  function trackButtonClick() {
+    gtag("event", "click_get_in_touch_button", {
+      button_title: "In Touch",
+    });
   }
 
   return (
@@ -91,10 +91,11 @@ export const About = ({ contactRef }) => {
             className="text-gray-200 text-base leading-loose md:text-lg sm:leading-loose lg:text-lg lg:leading-loose font-montserrat mt-3 md:mt-6"
           >
             Hello there! I'm Yusra and i am a developer based in Jeddah, KSA. I
-            like making clean, simple and fancy websites, all the while being
+            like making clean and simple websites, all the while being
             meticulous and punctual. I enjoy working in front-end development
-            but also get a kick out of backend-development. I've built mobile
-            and web apps using ReactJS, Flutter and NodeJS.
+            but also get a kick out of backend-development. I mainy work in MERN
+            stack, but i also have fundamental knowledge in NextJS, Flutter, and
+            so on.
             <br />
             When I'm not coding, I like to sketch and spend time with family and
             my cat,
@@ -123,9 +124,10 @@ export const About = ({ contactRef }) => {
           <LinkUnderLine
             whileHover={{ translateX: 30 }}
             variants={buttonAnimation}
-            onClick={() =>
-              {contactRef.current.scrollIntoView({ behavior: "smooth" }); trackButtonClick()}
-            }
+            onClick={() => {
+              contactRef.current.scrollIntoView({ behavior: "smooth" });
+              trackButtonClick();
+            }}
             className="text-gray-200 w-28 text-base mt-2 md:mt-4  md:text-lg md:w-28 text-center font-montserrat font-bold"
           >
             Get in touch

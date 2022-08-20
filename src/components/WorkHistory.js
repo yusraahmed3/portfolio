@@ -53,7 +53,7 @@ function WorkHistory() {
         </motion.h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 pr-5 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 pr-5 lg:px-10 gap-4">
         {Object.entries(ProjectData).map(([key, value], i) => {
           return (
             <motion.div
