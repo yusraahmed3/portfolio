@@ -36,7 +36,7 @@ function Homepage({homeRef}) {
       transition={{ staggerChildren: 0.5 }}
       className="relative flex h-screen bg-black bg-opacity-90"
     >
-      <img src={CatImage} alt="Cat Image" className="absolute h-full w-full opacity-30"/>
+      <img src={CatImage} alt="Cat Image" className="absolute w-full h-full object-cover object-left-top md:object-center opacity-30"/>
       <div className=" font-architects absolute  top-96 flex flex-col items-center w-full ">
         <h1 className=" text-terBg text-5xl text-left sm:text-7xl md:text-8xl lg:text-8xl  tracking-widest uppercase">
           <motion.span variants={headlineAnimation}>Hi,</motion.span> <motion.span variants={headlineAnimation}>I'm Yusra</motion.span>
