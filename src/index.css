@@ -15,5 +15,21 @@
     src: url("assets/fonts/MontserratAlternates-Light.ttf");
   }
 
+  @font-face {
+    font-family: "Pacifico";
+    src: url("assets/fonts/Pacifico-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "BrunoAce";
+    src: url("assets/fonts/BrunoAce-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "ArchitectsDaughter";
+    src: url("assets/fonts/ArchitectsDaughter-Regular.ttf");
+  }
+
+
 
 

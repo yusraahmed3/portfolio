@@ -13,12 +13,15 @@ module.exports = {
         sacramento: ["Sacramento"],
         radioCanada: ["RadioCanada"],
         montserrat: ["Montserrat"],
+        pacifico: ["Pacifico"],
+        bruno: ["BrunoAce"],
+        architects: ["ArchitectsDaughter"]
       },
       colors: {
         gold: "#CFB53B",
         secBg: "#E0AA6E",
         terBg: "#e0afa0",
-        mainBg: "#201E21",
+        mainBg: "#171615",
         "facebook-blue": "#4267B2",
         "twitter-blue": "#1DA1F2",
         "instagram-blue": "#515BD4",

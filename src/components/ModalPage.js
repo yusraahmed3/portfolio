@@ -50,7 +50,7 @@ export const ModalPage = ({ showModal, setShowModal, project, ref }) => {
             >
               <MdClose
                 onClick={() => setShowModal(false)}
-                className="absolute top-3 right-3 text-xl text-gray-200 z-10 cursor-pointer"
+                className="absolute top-3 right-3 text-xl text-gray-200 z-20 cursor-pointer"
               />
 
               <div className="w-full h-full flex flex-col ">

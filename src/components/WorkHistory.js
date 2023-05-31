@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ModalPage } from "./ModalPage";
 import ProjectData from "./ProjectData";
 
+
 const h1Animation = {
   hidden: { y: "-100%", opacity: 0 },
   visible: {
@@ -17,7 +18,7 @@ const imageBoxAnimation = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
 };
 
-function WorkHistory() {
+function WorkHistory({proRef}) {
   let [showModal, setShowModal] = useState(false);
   const [projectInfo, setProjectInfo] = useState({});
 
@@ -36,13 +37,14 @@ function WorkHistory() {
 
   return (
     <motion.div
+    ref={proRef}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ staggerChildren: 0.2 }}
       className={`${
         showModal ? "touch-none" : "touch-auto"
-      } h-full font-montserrat p-2 md:p-0`}
+      } h-screen bg-mainBg font-architects p-2 md:p-0`}
     >
       <div className="text-center">
         <motion.h1

@@ -50,7 +50,7 @@ const buttonAnimation = {
   },
 };
 
-export const About = ({ contactRef }) => {
+export const About = ({ contactRef, aboutRef }) => {
   const [onHover, setOnHover] = useState(false);
 
   function trackButtonClick() {
@@ -60,8 +60,9 @@ export const About = ({ contactRef }) => {
   }
 
   return (
-    <div className="h-full w-full ">
+    <div ref={aboutRef} className="h-screen bg-mainBg my-auto flex">
       <motion.div
+      
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -82,13 +83,13 @@ export const About = ({ contactRef }) => {
         <div className=" flex flex-col  w-4/5 md:3/4 -order-1 md:order-none">
           <motion.h2
             variants={h2Animation}
-            className="text-terBg  text-2xl  md:text-3xl font-montserrat font-bold "
+            className="text-terBg  text-2xl  md:text-3xl font-architects font-bold "
           >
             About Me
           </motion.h2>
           <motion.p
             variants={textAnimation}
-            className="text-gray-200 text-base leading-loose md:text-lg sm:leading-loose lg:text-lg lg:leading-loose font-montserrat mt-3 md:mt-6"
+            className="text-gray-200 text-base leading-loose md:text-lg sm:leading-loose lg:text-lg lg:leading-loose font-architects mt-3 md:mt-6"
           >
             Hello there! I'm Yusra and i am a developer based in Jeddah, KSA. I
             like making clean and simple websites, all the while being
@@ -97,8 +98,8 @@ export const About = ({ contactRef }) => {
             stack, but i also have fundamental knowledge in NextJS, Flutter, and
             so on.
             <br />
-            When I'm not coding, I like to sketch and spend time with family and
-            my cat,
+            When I'm not coding, I like to sketch and spend time with my family and
+             cat,
             <span
               className="underline decoration-wavy underline-offset-8 inline-flex ml-2"
               onMouseOver={() => setOnHover(true)}
@@ -128,7 +129,7 @@ export const About = ({ contactRef }) => {
               contactRef.current.scrollIntoView({ behavior: "smooth" });
               trackButtonClick();
             }}
-            className="text-gray-200 w-28 text-base mt-2 md:mt-4  md:text-lg md:w-28 text-center font-montserrat font-bold"
+            className="font-architects text-gray-200 w-28 text-base mt-2 md:mt-4  md:text-lg md:w-28 text-center font-bold"
           >
             Get in touch
           </LinkUnderLine>

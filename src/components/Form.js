@@ -55,7 +55,7 @@ export const Form = ({ submitForm }) => {
 
         <label
           htmlFor="email"
-          className="peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-xs  sm:text-sm transition-all
+          className="font-architects peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-xs  sm:text-sm transition-all
     peer-focus:text-sm peer-focus:text-terBg peer-focus:-top-3"
         >
           Email
@@ -74,7 +74,7 @@ export const Form = ({ submitForm }) => {
         />
         <label
           htmlFor="name"
-          className="peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-sm transition-all
+          className="font-architects peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-sm transition-all
     peer-focus:text-sm peer-focus:text-terBg peer-focus:-top-3"
         >
           Name
@@ -93,7 +93,7 @@ export const Form = ({ submitForm }) => {
         />
         <label
           htmlFor="subject"
-          className="peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-sm transition-all
+          className="font-architects peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-sm transition-all
     peer-focus:text-sm peer-focus:text-terBg peer-focus:-top-3"
         >
           Subject
@@ -114,7 +114,7 @@ export const Form = ({ submitForm }) => {
         />
         <label
           htmlFor="Message"
-          className="peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-sm transition-all
+          className="font-architects peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-200 absolute left-0 -top-3 text-terBg text-sm transition-all
     peer-focus:text-sm peer-focus:text-terBg peer-focus:-top-3 resize-none"
         >
           Message
@@ -129,7 +129,7 @@ export const Form = ({ submitForm }) => {
         variants={buttonAnimation}
         type="submit"
         onClick={trackContactButtonClick}
-        className="text-gray-200 hover:bg-black hover:bg-opacity-30 hover:text-terBg transition-colors duration-300 text-sm w-32 md:w-28 inline-block self-end p-1 border-2 border-terBg  rounded-lg"
+        className="font-architects text-gray-200 hover:bg-black hover:bg-opacity-30 hover:text-terBg transition-colors duration-300 text-sm w-32 md:w-28 inline-block self-end p-1 border-2 border-terBg  rounded-lg"
       >
         Send Message
       </motion.button>

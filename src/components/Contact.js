@@ -36,7 +36,7 @@ const formAnimation = {
   },
 };
 
-const Contact = ({ forwardedRef }) => {
+const Contact = ({ forwardedRef}) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   function trackResumeButtonClick() {
@@ -61,7 +61,7 @@ const Contact = ({ forwardedRef }) => {
   return (
     <div
       ref={forwardedRef}
-      className="min-h-screen flex items-center justify-center overflow-hidden"
+      className="min-h-screen flex items-center justify-center overflow-hidden bg-mainBg "
     >
       <motion.div
         initial="hidden"
@@ -70,11 +70,11 @@ const Contact = ({ forwardedRef }) => {
         transition={{ staggerChildren: 0.15 }}
         className="flex flex-col md:flex-row md:space-x-8 md:space-y-0  space-y-8 p-8 w-full max-w-4xl shadow-xl "
       >
-        <div className=" flex flex-col space-y-8 justify-between ">
+        <div className="font-architects flex flex-col space-y-8 justify-between ">
           <div>
             <motion.h1
               variants={h1Animation}
-              className="text-terBg font-extrabold md:font-bold text-2xl md:text-4xl font-montserrat"
+              className="text-terBg font-extrabold md:font-bold text-2xl md:text-4xl "
             >
               Get in touch
             </motion.h1>
@@ -89,7 +89,7 @@ const Contact = ({ forwardedRef }) => {
 
           <motion.div
             variants={textAnimation}
-            className=" group hover:cursor-pointer inline-flex space-x-16 items-center w-28 "
+            className=" group hover:cursor-pointer inline-flex space-x-16 items-center w-28  "
             onClick={() =>
               (window.location.href = "mailto:yusraa190@gmail.com")
             }
@@ -97,7 +97,7 @@ const Contact = ({ forwardedRef }) => {
             <div className=" border border-white w-7 h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 relative ">
               <BsArrowRight className="text-terBg text-2xl lg:text-3xl absolute top-1/2 -translate-y-1/2 -left-2 group-hover:translate-x-3 lg:group-hover:translate-x-5 transition duration-500 " />
             </div>
-            <span className="  text-base  text-center  text-gray-200 scale-95 group-hover:scale-105 transition duration-500 absolute">
+            <span className=" text-lg  text-center  text-gray-200 scale-95 group-hover:scale-105 transition duration-500 absolute">
               yusraa190@gmail.com
             </span>
           </motion.div>
@@ -155,7 +155,7 @@ const Contact = ({ forwardedRef }) => {
               whileHover={{ scale: 1.1, cursor: "pointer" }}
               whileTap={{ scale: 0.95 }}
               onClick={trackResumeButtonClick}
-              className="text-gray-400 text-sm hover:text-gray-300 no-underline font-radioCanada mr-10"
+              className="font-architects text-gray-300 text-base hover:text-gray-300 no-underline  mr-10"
             >
               Resume
             </motion.a>
