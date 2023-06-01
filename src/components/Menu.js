@@ -26,9 +26,9 @@ function SideMenu({homeRef, contactRef, aboutRef, proRef}) {
   return (
   
     <>
-    <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{duration: 2}} src={Logo} alt='Logo letter' className='fixed left-0 lg:-top-16 z-10 w-40 lg:w-80   cursor-pointer' onClick={() => {
+    <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{duration: 1}} src={Logo} alt='Logo letter' className='fixed left-0 lg:-top-16 z-10 w-40 lg:w-80   cursor-pointer' onClick={() => {
               homeRef.current?.scrollIntoView({ behavior: "smooth" })}}/>
-              {showMenu ? <TfiClose className='fixed z-20 top-16 text-2xl text-white right-20 cursor-pointer lg:hidden' onClick={()=> {setShowMenu(false)}}/> : <CgMenuRight className='fixed z-10 top-16 text-2xl text-white right-20 cursor-pointer lg:hidden' onClick={()=> {setShowMenu(true)}}/>}
+              {showMenu ? <TfiClose className='fixed z-20 top-16 text-2xl text-white right-10 cursor-pointer lg:hidden ease-in' onClick={()=> {setShowMenu(false)}}/> : <CgMenuRight className='fixed z-10 top-16 text-2xl text-white right-10 cursor-pointer lg:hidden ease-in' onClick={()=> {setShowMenu(true)}}/>}
              <DesktopMenu menuAnimation={menuAnimation} homeRef={homeRef} aboutRef={aboutRef} proRef={proRef} contactRef={contactRef}/>
              {showMenu ? <MobileMenu setShowMenu={setShowMenu} menuAnimation={menuAnimation} homeRef={homeRef} aboutRef={aboutRef} proRef={proRef} contactRef={contactRef}/> : <></>}
 
