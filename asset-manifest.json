@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b0106f6b.css",
-    "main.js": "/static/js/main.fd0eef71.js",
+    "main.js": "/static/js/main.b8cccf8e.js",
     "static/js/787.a30a0969.chunk.js": "/static/js/787.a30a0969.chunk.js",
     "static/media/catgif.gif": "/static/media/catgif.5099ace6e90a7bda6679.gif",
     "static/media/frame1a.png": "/static/media/frame1a.1421b6d3a4765630f32f.png",
@@ -25,19 +25,19 @@
     "static/media/reqpage.png": "/static/media/reqpage.913573d57d8c5d6fbd11.png",
     "static/media/pend.png": "/static/media/pend.f09bb29aa4279294ee43.png",
     "static/media/RadioCanada-Regular.ttf": "/static/media/RadioCanada-Regular.d27e1bceccc9fe2a33de.ttf",
+    "static/media/resume_2.pdf": "/static/media/resume_2.3008e2adbcf7a8343084.pdf",
     "static/media/dash.png": "/static/media/dash.5cda797972e4766f1dbb.png",
     "static/media/2.png": "/static/media/2.2ba89cb2c3f81cabc838.png",
     "static/media/8.png": "/static/media/8.39573a02d51f0a0a65a7.png",
     "static/media/BrunoAce-Regular.ttf": "/static/media/BrunoAce-Regular.57d90f1b7b321c6768d4.ttf",
-    "static/media/resume-2.pdf": "/static/media/resume-2.263aa954e584162ff644.pdf",
     "static/media/ArchitectsDaughter-Regular.ttf": "/static/media/ArchitectsDaughter-Regular.b312624ea2a2f1abc5d9.ttf",
     "index.html": "/index.html",
     "main.b0106f6b.css.map": "/static/css/main.b0106f6b.css.map",
-    "main.fd0eef71.js.map": "/static/js/main.fd0eef71.js.map",
+    "main.b8cccf8e.js.map": "/static/js/main.b8cccf8e.js.map",
     "787.a30a0969.chunk.js.map": "/static/js/787.a30a0969.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0106f6b.css",
-    "static/js/main.fd0eef71.js"
+    "static/js/main.b8cccf8e.js"
   ]
 }
