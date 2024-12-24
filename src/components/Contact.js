@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import resumeFile from "../assets/file/resume-2.pdf";
+import resumeFile from "../assets/file/resume_2.pdf";
 import emailjs from "emailjs-com";
 import { Form } from "./Form";
 import { EmailSent } from "./EmailSent";
